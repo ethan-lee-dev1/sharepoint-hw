@@ -96,7 +96,8 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
     });
 
     const listContainer: Element =
-      this.domElement.querySelector("#spListContainer");
+      this.domElement.querySelector("#spListContainer")!;
+
     listContainer.innerHTML = html;
   }
 
